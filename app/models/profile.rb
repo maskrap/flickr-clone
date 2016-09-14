@@ -1,4 +1,4 @@
-class Profile < ApplicationRecord
+class Image < ApplicationRecord
   belongs_to :user
   has_many :images
 
