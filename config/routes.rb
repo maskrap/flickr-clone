@@ -1,10 +1,8 @@
 Rails.application.routes.draw do
-  root :to => 'sessions#new'
-  devise_for :users
 
-  resources :profile do
-    resources :images do
-    end
+  root :to => 'static_pages#home'
+  devise_for :users
+  resources :images do
   end
 end
 
