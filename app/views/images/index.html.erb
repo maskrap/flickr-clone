@@ -1,3 +1,7 @@
 <% @images.each do |image| %>
-  <%= image_tag image.photo.url(:medium) %>
+  Title: <%= image.title %> <br>
+  <%= image_tag image.photo.url(:medium) %><br>
+  Tag: <%= image.tag %>
+  <br>
+  <br>
 <% end %>
