@@ -9,5 +9,4 @@ describe "the creating an account process" do
     click_on 'Sign up'
     expect(page).to have_content 'HELLO'
   end
-
 end
