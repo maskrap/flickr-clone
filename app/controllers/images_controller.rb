@@ -3,6 +3,8 @@ class ImagesController < ApplicationController
 
   def index
     @images = Image.all
+    @users = User.all
+    # @user = User.find(params[:id])
   end
 
   def show

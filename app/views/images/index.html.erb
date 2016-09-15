@@ -1,5 +1,6 @@
 <% @images.each do |image| %>
   Title: <%= image.title %> <br>
+  Posted by: <%= image.user.email %>
   <%= image_tag image.photo.url(:medium) %><br>
   Tag: <%= image.tag %>
   <br>
