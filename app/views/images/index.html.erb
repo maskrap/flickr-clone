@@ -1,3 +1,6 @@
+<button class="btn btn-success"><%= link_to 'Add New Photo', new_user_image_path %></button>
+<br>
+<br>
 <% @images.each do |image| %>
   Title: <%= image.title %> <br>
   Posted by: <%= image.user.email %>
